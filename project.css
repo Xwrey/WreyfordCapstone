@@ -1,0 +1,450 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: #1a5276;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+nav {
+  background-color: #1a5276;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 1em;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #2980b9;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #1a5276;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #e67e22;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 1.1em;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #d35400;
+  text-decoration: none;
+}
+
+/* Page Header - inner pages */
+.page-header {
+  background-color: #1a5276;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.page-header h1 {
+  font-size: 2em;
+}
+
+/* Main Content */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* About Preview on Home */
+.about-preview {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.about-preview img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ddd;
+}
+
+.about-preview blockquote {
+  font-style: italic;
+  font-size: 1.1em;
+  border-left: 4px solid #1a5276;
+  padding-left: 15px;
+  max-width: 500px;
+}
+
+/* Testimonials */
+.testimonials {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.testimonials h2 {
+  margin-bottom: 25px;
+  font-size: 1.6em;
+  color: #1a5276;
+}
+
+.testimonial-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  max-width: 350px;
+  text-align: center;
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #ddd;
+  margin-bottom: 15px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .name {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #eaf2f8;
+  margin: 40px 0;
+  border-radius: 8px;
+}
+
+.cta h2 {
+  margin-bottom: 15px;
+  color: #1a5276;
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 1.5em;
+  color: #1a5276;
+  margin-bottom: 15px;
+}
+
+/* Services Cards Grid */
+.service-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.service-box h3 {
+  color: #1a5276;
+  margin-bottom: 10px;
+}
+
+.classes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.class-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.class-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* About Page */
+.about-section {
+  margin-bottom: 30px;
+}
+
+.about-section h2 {
+  border-bottom: 2px solid #1a5276;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Booking Options */
+.booking-option {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.booking-option h3 {
+  color: #1a5276;
+  margin-bottom: 10px;
+}
+
+/* Resources */
+.resource-section {
+  margin-bottom: 30px;
+}
+
+.resource-section ul {
+  padding-left: 20px;
+}
+
+.resource-section li {
+  margin-bottom: 8px;
+}
+
+/* Contact Info */
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  margin-bottom: 8px;
+}
+
+/* FAQ */
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  color: #1a5276;
+  margin-bottom: 5px;
+}
+
+/* Pricing Table */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+table caption {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #1a5276;
+  color: #fff;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+td:first-child,
+th:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f7fb;
+}
+
+tbody tr:hover {
+  background-color: #eaf2f8;
+}
+
+/* Form */
+form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1a5276;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1a5276;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Footer */
+footer {
+  background-color: #1a5276;
+  color: #fff;
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #eaf2f8;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 1.6em;
+  }
+
+  .about-preview {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-preview blockquote {
+    border-left: none;
+    border-top: 4px solid #1a5276;
+    padding-left: 0;
+    padding-top: 15px;
+  }
+
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .classes-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  th, td {
+    padding: 10px 8px;
+    font-size: 0.9em;
+  }
+}
