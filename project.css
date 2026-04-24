@@ -455,6 +455,63 @@ form {
   resize: vertical;
 }
 
+/* Shop Page */
+.shop-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.shop-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  width: 280px;
+  text-align: center;
+}
+
+.shop-card h3 {
+  color: #1a5276;
+  margin-bottom: 10px;
+}
+
+.shop-price {
+  font-size: 2em;
+  font-weight: bold;
+  color: #e67e22;
+  margin-bottom: 15px;
+}
+
+.shop-card ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.shop-card li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.shop-card li:last-child {
+  border-bottom: none;
+}
+
+.shop-info {
+  margin-top: 40px;
+}
+
+.shop-info ol {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.shop-info li {
+  margin-bottom: 8px;
+}
+
 /* Footer */
 footer {
   background-color: #1a5276;
@@ -521,6 +578,16 @@ footer p {
   }
 
   .gallery figure {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .shop-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shop-card {
     width: 100%;
     max-width: 400px;
   }
