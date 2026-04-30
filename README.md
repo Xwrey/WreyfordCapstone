@@ -1,24 +1,36 @@
 # Carson Wreyford Tutoring
 
-A personal tutoring services website for math and computer science, built for college students ages 18–30.
+## Project Description
+
+Tutoring site for Carson Wreyford. The site includes service information, booking details, resources, contact information, and JavaScript interactivity.
 
 ## Pages
 
-- **Home** (`index.html`) — Overview, testimonials, and booking CTA
-- **About** (`about.html`) — Background, qualifications, and experience
-- **Services** (`services.html`) — Subjects offered and pricing
-- **Book** (`book.html`) — Session booking form
-- **Resources** (`resources.html`) — Study tips and helpful links
-- **Contact** (`contact.html`) — Contact form and info
+- Home (`index.html`) - Overview, testimonials, and booking CTA
+- About (`about.html`) - Background, qualifications, and experience
+- Services (`services.html`) - Subjects offered and pricing
+- Book (`book.html`) - Session booking form
+- Resources (`resources.html`) - Study tips and helpful links
+- Contact (`contact.html`) - Contact form and info
 
-## How to View
+## Installation Instructions
 
-Open `index.html` in any web browser, or visit the live site on GitHub Pages:
+No installation is required. Open `index.html` in a browser, or run a local server:
 
-> https://<your-username>.github.io/<repo-name>/
+```bash
+python3 -m http.server 8000
+```
 
-## Built With
+Then visit `http://localhost:8000`.
+
+## Usage Instructions
+
+- Use the navigation links to browse the site.
+- Use `services.html` to view tutoring options, the slideshow, and the session recommendation tool.
+- Use `contact.html` to test the JavaScript contact form validation.
+
+## Technologies Used
 
 - HTML
-- CSS (external stylesheet: `project.css`)
-- JavaScript / jQuery
+- CSS (`project.css`)
+- JavaScript (`script.js`)
