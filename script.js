@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
+  var nav = document.querySelector("nav");
+  var header = document.querySelector(".page-header") || document.querySelector(".hero");
+
+  if (nav && header) {
+    window.addEventListener("scroll", function () {
+      var headerBottom = header.offsetTop + header.offsetHeight;
+      if (window.scrollY >= headerBottom) {
+        nav.classList.add("nav-scrolled");
+      } else {
+        nav.classList.remove("nav-scrolled");
+      }
+    });
+  }
+
   var serviceSlides = document.querySelectorAll(".service-slide");
   var prevService = document.getElementById("prev-service");
   var nextService = document.getElementById("next-service");

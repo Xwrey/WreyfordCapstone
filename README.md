@@ -10,7 +10,8 @@ Tutoring site for Carson Wreyford. The site includes service information, bookin
 - About (`about.html`) - Background, qualifications, and experience
 - Services (`services.html`) - Subjects offered and pricing
 - Book (`book.html`) - Session booking form
-- Resources (`resources.html`) - Study tips and helpful links
+- Resources (`resources.html`) - Study tips, practice problems, helpful links, tools, and textbooks
+- FAQ (`faq.html`) - Frequently asked questions about tutoring, scheduling, pricing, and policies
 - Contact (`contact.html`) - Contact form and info
 
 ## Installation Instructions
