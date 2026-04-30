@@ -31,21 +31,55 @@
   <main>
 
     <!-- Booking Options -->
-    <div class="service-box">
-      <h3>Free 15-Minute Diagnostic Session</h3>
-      <p>Not sure where to start? Book a free 15-minute session so I can assess your needs and recommend a plan.</p>
-      <p><a href="book.html" class="btn">Book Free Session</a></p>
-    </div>
+    <section class="services-slideshow" aria-label="Tutoring service options">
+      <button type="button" id="prev-service" class="slide-arrow" aria-label="Previous service">&#10094;</button>
 
-    <div class="service-box">
-      <h3>Standard Tutoring Sessions</h3>
-      <p>One-on-one sessions tailored to your coursework. Available in 30-minute or 60-minute options.</p>
-      <ul>
-        <li>30 minutes - $25</li>
-        <li>60 minutes - $45</li>
-      </ul>
-      <p><a href="book.html" class="btn">Book a Session</a></p>
-    </div>
+      <div class="service-slide active">
+        <div class="service-box">
+          <h3>Free 15-Minute Diagnostic Session</h3>
+          <p>Not sure where to start? Book a free 15-minute session so I can assess your needs and recommend a plan.</p>
+          <p><a href="book.html" class="btn">Book Free Session</a></p>
+        </div>
+      </div>
+
+      <div class="service-slide">
+        <div class="service-box">
+          <h3>30-Minute Tutoring Session</h3>
+          <p>A focused session for homework help, one difficult topic, or a quick review before class.</p>
+          <p class="shop-price">$25</p>
+          <p><a href="book.html" class="btn">Book 30 Minutes</a></p>
+        </div>
+      </div>
+
+      <div class="service-slide">
+        <div class="service-box">
+          <h3>60-Minute Tutoring Session</h3>
+          <p>A longer session for exam prep, debugging code, or working through several problems step by step.</p>
+          <p class="shop-price">$45</p>
+          <p><a href="book.html" class="btn">Book 60 Minutes</a></p>
+        </div>
+      </div>
+
+      <button type="button" id="next-service" class="slide-arrow" aria-label="Next service">&#10095;</button>
+    </section>
+
+    <section class="service-box">
+      <h2>Session Recommendation</h2>
+      <p>Choose what you need help with, then get a simple session suggestion.</p>
+
+      <div class="form-group">
+        <label for="session-need">What do you need help with?</label>
+        <select id="session-need">
+          <option value="unsure">I am not sure where to start</option>
+          <option value="homework">I need homework help</option>
+          <option value="exam">I am preparing for an exam</option>
+          <option value="debugging">I need help debugging code</option>
+        </select>
+      </div>
+
+      <button type="button" id="recommend-button" class="btn">Recommend a Session</button>
+      <div id="recommendation-result" class="feedback-message" aria-live="polite"></div>
+    </section>
 
     <!-- Pricing Comparison Table -->
     <section>
@@ -141,5 +175,6 @@
     <p>&copy; 2026 Carson Wreyford Tutoring</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
